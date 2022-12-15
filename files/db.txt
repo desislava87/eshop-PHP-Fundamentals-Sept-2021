@@ -1,0 +1,72 @@
+eshop
+
+Потребители - users
+- id - int  unsigned PK AI NOT NULL
+- type_id - tinyint unsigned
+- name - varchar(32)
+- lastname - varchar(32)
+- email - varchar(64)
+- phone - varchar(13)
+- image - varchar(100)
+- password - varchar(100)
+- status - enum(active,inactive)
+- created_at - datetime
+- created_by - int unsigned
+- updated_at - datetime
+- updated_by - int unsigned
+
+Типове потребители - users_types
+- id - int  unsigned PK AI NOT NULL
+- title - varchar(64)
+
+Табица продукти - products
+- id - int  unsigned PK AI NOT NULL
+- category_id - tinyint  unsigned
+- name - varchar(255)
+- description - text
+- image - varchar(255)
+- price - decimal(10,2)
+- count - int  unsigned
+- status - enum(active,inactive)
+- delivery_days- int  unsigned
+- created_at - datetime
+- created_by - int unsigned
+- updated_at - datetime
+- updated_by - int unsigned
+
+Таблица категории продукти - categories
+- id - int  unsigned PK AI NOT NULL
+- name - varchar(100)
+- description - text
+- status - enum(active,inactive)
+- image - varchar(255)
+- created_at - datetime
+- created_by - int unsigned
+- updated_at - datetime
+- updated_by - int unsigned
+
+Таблица новини - news
+- id - int  unsigned PK AI NOT NULL
+- title - varchar(255)
+- description - text
+- status - enum(active,inactive)
+- image - varchar(255)
+- created_at - datetime
+- created_by - int unsigned
+- updated_at - datetime
+- updated_by - int unsigned
+
+Таблица съобщения messages
+- id - int  unsigned PK AI NOT NULL
+- name - varchar(100)
+- email - varchar(100)
+- phone - varchar(100)
+- message - text
+- date - datetime
+- is_read - tinyint unsigned
+
+Таблица абониране subscribers
+- id - int  unsigned PK AI NOT NULL
+- email - varchar(100)
+- date - datetime
+

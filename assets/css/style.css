@@ -1,0 +1,121 @@
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: orange;
+}
+
+.breadcrumb ul li {
+    display: inline-block;
+}
+
+.breadcrumb li a {
+    margin: 10px;
+}
+
+.header {
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.header ul {
+    text-align: center;
+}
+
+.header .login-btn {
+    text-align: right;
+    margin-right: 100px;
+}
+
+.header ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.header ul li a,
+.header .login-btn a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.header ul li a:hover,
+.header .login-btn a:hover {
+    color: orange;
+}
+
+.content {
+    text-align: center;
+}
+
+.content img {
+    max-width: 40%;
+}
+
+/* Products */
+.products {
+    text-align: center;
+}
+
+.products .product-item {
+    display: inline-block;
+    width: 22%;
+    border: 1px solid #eee;
+    padding: 10px;
+    margin: 10px;
+}
+
+.products .product-item img {
+    max-width: 50%;
+}
+
+.products .product-item a {
+    display: block;
+    margin: 10px;
+}
+
+.news .product-item {
+    width: 30%;
+}
+
+.news .product-item a {
+    color: rgba(255, 94, 0, 0.781);
+}
+
+/* Subscribe */
+.subscribe {
+    border-top: 1px solid orange;
+    border-bottom: 1px solid orange;
+    margin: 30px 0;
+    padding: 20px 0 40px;
+}
+
+.subscribe input {
+    padding: 10px;
+}
+
+.subscribe input[type="submit"] {
+    background-color: orange;
+    color: #fff;
+}
+
+/* Footer */
+.footer {
+    background: #555;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+}
